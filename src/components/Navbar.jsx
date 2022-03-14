@@ -9,15 +9,17 @@ export default function Navbar(props) {
       <ul className={styles.links}>
         <NavLink href="./" text="Home" />
         /
-        <NavLink href="/about" text="About" />
-        /
         <NavLink href={resume} text="Resume" />
+        {/* commenting this section out because these components are not quite ready yet
+        /
+        <NavLink href="/about" text="About" />
         /
         <NavLink href="./portfolio" text="Portfolio" />
         /
         <NavLink href="./blog" text="Blog" />
         /
         <NavButton href="fixLater" text="Contact" />
+        */}
       </ul>
     </nav>
   );
