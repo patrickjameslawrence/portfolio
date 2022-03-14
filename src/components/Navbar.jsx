@@ -3,11 +3,13 @@ import NavLink from "./atoms/NavLink";
 import NavButton from "./atoms/NavButton";
 import resume from "../assets/resume.pdf";
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
-    <nav className={styles.navbar}>
+    <nav className={props.collapsable ? styles.collapsable : styles.navbar}>
       <ul className={styles.links}>
         <NavLink href="./" text="Home" />
+        /
+        <NavLink href="/about" text="About" />
         /
         <NavLink href={resume} text="Resume" />
         /

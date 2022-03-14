@@ -4,9 +4,9 @@ export default function ProfilePhoto() {
   return (
     <motion.svg
       style={{ originX: "center", originY: "center" }}
-      whileHover={{ scale: 1.5, duration: 2, ease: "backInOut" }}
+      whileHover={{ scale: 1.25, duration: 2, ease: "backInOut" }}
       whileTap={{ scale: 0.875 }}
-      width="3vw"
+      width="calc(2rem + 1vw)"
       height="auto"
       viewBox="0 0 64 64"
       fill="none"
