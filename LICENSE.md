@@ -1,0 +1,1 @@
+This project is licensed under an "All Rights Reserved" license. Unauthorized copying, distribution, or modification of this project is strictly prohibited without prior written consent from the project maintainers.
