@@ -8,9 +8,19 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 
 const projects = [
   {
-    name: 'Cupid - WIP',
+    name: 'Cupid Client - WIP (See also: Cupid API)',
     description:
-      "\"Cupid\" is more of a codename for the original project idea I had in early 2024 but it's turned into a full-fledged project template that I can iterate on over and over again. It's removed a lot of the boilerplate code I used to have to write for each project and has a lot of the features I've always wanted in a project template. So, while it is a work in progress, it's still something I'm very excited about.",
+      "\"Cupid\" is more of a codename for the original project idea I had in early 2024 but it's turned into a full-fledged project template that I can iterate on over and over again. It's removed a lot of the boilerplate code I used to have to write. So, while it is a work in progress, it's still something I'm very excited about.",
+    link: {
+      href: 'https://cupid-production.vercel.app',
+      label: 'cupid-production.vercel.app'
+    },
+    logo: logoCupid
+  },
+  {
+    name: 'Cupid API - WIP (See also: Cupid Client)',
+    description:
+      "Cupid's backend and brains. This is the NestJS API that powers the Cupid app. It's also a work in progress but similarly I'm very excited about it. I don't always have this one running as Heroku doesn't offer free hosting anymore. So, some of the features on the Cupid client app may not be present.",
     link: {
       href: 'https://cupid-production.vercel.app',
       label: 'cupid-production.vercel.app'
