@@ -8,19 +8,10 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 
 const projects = [
   {
-    name: 'Cupid Client - WIP (See also: Cupid API)',
+    name: 'Cupid - Work in progress',
     description:
       "\"Cupid\" is more of a codename for the original project idea I had in early 2024 but it's turned into a full-fledged project template that I can iterate on over and over again. It's removed a lot of the boilerplate code I used to have to write. So, while it is a work in progress, it's still something I'm very excited about.",
-    link: {
-      href: 'https://cupid-production.vercel.app',
-      label: 'cupid-production.vercel.app'
-    },
-    logo: logoCupid
-  },
-  {
-    name: 'Cupid API - WIP (See also: Cupid Client)',
-    description:
-      "Cupid's backend and brains. This is the NestJS API that powers the Cupid app. It's also a work in progress but similarly I'm very excited about it. I don't always have this one running as Heroku doesn't offer free hosting anymore. So, some of the features on the Cupid client app may not be present.",
+    note: "To save on hosting costs, the backend API isn't always running. Some features may not be present on the client app. If you'd like to see it in action, please reach out and I can spin it up for you.",
     link: {
       href: 'https://cupid-production.vercel.app',
       label: 'cupid-production.vercel.app'
@@ -30,7 +21,7 @@ const projects = [
   {
     name: 'Portfolio',
     description:
-      "If you'd like to see the code behind this site, then you can checkout the repository on GitHub here.",
+      "If you'd like to see the code behind this site, you can checkout the repository on GitHub here. It's a simple Next.js app that uses Tailwind CSS for styling and MDX for the articles that I write. I built it to showcase my work, post articles, and to experiment with some new features in Next.js.",
     link: {
       href: 'https://github.com/patrickjameslawrence/portfolio',
       label: 'github.com'
@@ -78,7 +69,18 @@ export default function Projects() {
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
             </h2>
-            <Card.Description>{project.description}</Card.Description>
+            <Card.Description>
+              {project.description}
+              {project.note ? (
+                <>
+                  <br />
+                  <br />
+                  <span className="text-xs text-zinc-500">{project.note}</span>
+                </>
+              ) : (
+                ''
+              )}
+            </Card.Description>
             <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-cyan-500 dark:text-zinc-200">
               <LinkIcon className="h-6 w-6 flex-none" />
               <span className="ml-2">{project.link.label}</span>
