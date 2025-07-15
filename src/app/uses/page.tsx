@@ -105,6 +105,15 @@ export default function Uses() {
             working without it and the best part is that it’s completely free.
           </Tool>
         </ToolsSection>
+        <ToolsSection title="Financial tools">
+          <Tool title="YNAB (You Need A Budget)">
+            Not very important to work per se, but this is a great app for
+            budgeting and managing your money. It’s helped me get a better
+            handle on my finances and spending habits and I highly recommend it
+            to anyone looking to track how much they’re spending on things,
+            build wealth, and/or improve their financial situation.
+          </Tool>
+        </ToolsSection>
         <ToolsSection title="Productivity">
           <Tool title="Microsoft Teams">
             Working with a mostly remote team is hard and Microsoft Teams just
