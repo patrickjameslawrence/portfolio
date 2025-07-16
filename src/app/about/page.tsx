@@ -138,14 +138,14 @@ export default function About() {
         <div className="lg:pl-20">
           <ul role="list">
             <SocialLink
-              href="https://www.instagram.com/patrickjameslawrence"
+              href="https://www.instagram.com/patricklawrence__"
               icon={InstagramIcon}
               className="mt-4"
             >
               Follow me on Instagram
             </SocialLink>
             <SocialLink
-              href="https://www.linkedin.com/in/patrickjameslawrence"
+              href="https://www.linkedin.com/in/plawre"
               icon={LinkedInIcon}
               className="mt-4"
             >
@@ -159,11 +159,11 @@ export default function About() {
               See my code on GitHub
             </SocialLink>
             <SocialLink
-              href="mailto:patrickjameslawrence@icloud.com"
+              href="mailto:plawre@icloud.com"
               icon={MailIcon}
               className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
             >
-              patrickjameslawrence@icloud.com
+              plawre@icloud.com
             </SocialLink>
           </ul>
         </div>
